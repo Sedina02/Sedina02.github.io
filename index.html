@@ -52,6 +52,81 @@
         <img width="250" src="img/hambi.jpg" alt="Tasty Burger">
     </a>
 
+    <h3>Extra toppings</h3>
+    <fieldset>
+        <legend>Product details</legend>
+        <span>Choose</span>
+        <div>
+            <label for="nothing">Nem kérek</label>
+            <input id="nothing" name="extra" type="checkbox" value="0">
+        </div>
+        <div>
+            <label for="cheese">Cheese</label>
+            <input id="cheese" name="extra" type="checkbox" value="300">
+        </div>
+        <div>
+            <label for="double-cheese">Double cheese</label>
+            <input id="double-cheese" name="extra" type="checkbox" value="600">
+        </div>
+        <div>
+            <label for="double-meat">Double meat</label>
+            <input id="double-meat" name="extra" type="checkbox" value="1000">
+        </div>
+        <div>
+            <label for="extra-patty">Extra patty</label>
+            <input id="extra-patty" name="extra" type="checkbox" value="1600">
+        </div>
+        <div>
+            <label>Sauces: </label>
+            <select>
+                <option value="sauce"> Classic burger sauce</option>
+                <option value="sauce"> Jalapeno chili sauce</option>
+                <option value="sauce"> Blue cheese mayo.</option>
+            </select>
+        </div>
+        <div>
+            <label for="number">Quantity</label>
+            <input id="number" name="number" type="number" pattern="[0-10]">
+        </div>
+    </fieldset>
+    
+    <h3>Order</h3>
+        <form>
+            <fieldset>
+                <legend>Personal data</legend>
+                <div>
+                    <label for="firstname">First name: *</label>
+                     <input id="firstname" name="firstname" type="text" required>
+                </div>
+                <div>
+                      <label for="lastname">Last name: *</label>
+                    <input id="lastname" name="lastname" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email address: *</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="address">Address *</label>
+                    <input id="address" name="address" type="text" required>
+                 </div>
+                <div>
+                    <label for="comment">Comment: *</label>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+                
+                <div>
+                    <label for="mail">Newletter</label>
+                    <input id="mail" name="mail" type="checkbox" required>
+                </div>
+                <p>Newletter frequency:</p>
+                <input name="freq" type="radio" value="weekly"> weekly
+                <input name="freq" type="radio" value="monthly"> monthly
+            </fieldset>
+        </form>
+
+        <input type="submit" name="submit"  >
+
 </body>
 
 </html>
